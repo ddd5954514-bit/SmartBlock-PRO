@@ -4,54 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>מדיניות פרטיות - SmartBlock Pro</title>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700;800&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --text-dark: #2d3436;
+            --text-light: #ffffff;
+            --glass-card: rgba(255, 255, 255, 0.9);
+        }
+
         body {
             font-family: 'Assistant', sans-serif;
-            background-color: #f8fafc;
-            line-height: 1.8;
             margin: 0;
             padding: 0;
-            color: #334155;
+            background-image: var(--primary-gradient);
+            background-attachment: fixed;
+            color: var(--text-dark);
+            min-height: 100vh;
         }
+
         .container {
             max-width: 800px;
-            margin: 50px auto;
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin: 80px auto;
+            background: var(--glass-card);
+            backdrop-filter: blur(15px);
+            padding: 50px;
+            border-radius: 30px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+            border: 1px solid rgba(255,255,255,0.3);
         }
-        h1 { color: #1e293b; border-bottom: 3px solid #3498db; display: inline-block; }
+
+        .back-link {
+            text-decoration: none;
+            color: #6c5ce7;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #4a148c;
+            border-bottom: 4px solid #667eea;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
         .highlight-box {
-            background: #f0f9ff;
-            border-right: 5px solid #0ea5e9;
-            padding: 20px;
-            margin: 20px 0;
-            font-weight: bold;
+            background: rgba(102, 126, 234, 0.1);
+            border-right: 6px solid #667eea;
+            padding: 25px;
+            margin: 30px 0;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #4a148c;
+            border-radius: 10px;
         }
-        a { color: #3498db; text-decoration: none; }
+
+        h3 { color: #555; margin-top: 30px; }
+        p { line-height: 1.8; color: #444; }
+        ul { color: #444; }
+
     </style>
 </head>
 <body>
 
 <div class="container">
-    <a href="index.html">← חזרה לדף הבית</a>
+    <a href="index.html" class="back-link">← חזרה לדף הבית</a>
+    <br>
     <h1>מדיניות פרטיות</h1>
     
-    <p>אנו ב-SmartBlock Pro מחויבים לשמירה על פרטיות המשתמשים שלנו בצורה המחמירה ביותר.</p>
+    <p>אנו ב-SmartBlock Pro מחויבים לשמירה על פרטיות המשתמשים שלנו בצורה המוחלטת ביותר.</p>
     
     <div class="highlight-box">
-        נשוב ונדגיש: התוסף אינו אוסף שום מידע אישי המזהה אותך, כולל כתובות IP, היסטוריית גלישה או נתוני שימוש באתרים.
+        נשוב ונשגיש: התוסף אינו אוסף, אינו שומר ואינו מעביר שום מידע אישי המזהה אותך, כולל כתובות IP, היסטוריית גלישה או נתוני שימוש באתרים.
     </div>
 
     <h3>אילו נתונים נאספים?</h3>
-    <p>הנתון היחיד שנאסף הוא <strong>מספר ההתקנות הכולל</strong> של התוסף. נתון זה הוא אנונימי לחלוטין ומשמש אותנו אך ורק כדי לדעת כמה אנשים נהנים מהפרויקט.</p>
+    <p>הנתון היחיד שנאסף הוא <strong>מספר ההתקנות הכולל</strong> של התוסף. נתון זה הוא אנונימי לחלוטין ומשמש אותנו אך ורק כדי לדעת כמה אנשים נהנים מהפרויקט ולצורך שיפורו.</p>
 
-    <h3>אבטחה</h3>
-    <p>הקוד של התוסף פועל מקומית על הדפדפן שלך ואינו יוצר קשר עם שרתים חיצוניים לצורך העברת מידע אישי.</p>
+    <h3>איך זה עובד?</h3>
+    <p>הקוד של התוסף פועל מקומית על הדפדפן שלך. הוא אינו יוצר קשר עם שרתים חיצוניים לצורך העברת מידע אישי. כל פעולת הסינון מתבצעת אצלך במחשב.</p>
 
-    <p style="margin-top: 40px; font-size: 0.9rem; color: #94a3b8;">עודכן לאחרונה: אפריל 2026</p>
+    <p style="margin-top: 50px; font-size: 0.9rem; color: #7f8c8d;">עודכן לאחרונה: מאי 2026</p>
 </div>
 
 </body>
