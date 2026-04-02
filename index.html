@@ -3,148 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartBlock Pro | חסימת פרסומות חכמה</title>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>SmartBlock Pro - חווית גלישה נקייה</title>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #2563eb;
-            --secondary-color: #1e40af;
-            --bg-color: #f8fafc;
-            --text-color: #1e293b;
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --light-bg: #f4f7f6;
+            --glass: rgba(255, 255, 255, 0.9);
         }
 
         body {
             font-family: 'Assistant', sans-serif;
             margin: 0;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            color: var(--primary);
+            min-height: 100vh;
+        }
+
+        nav {
+            background: var(--glass);
+            padding: 1rem 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--primary);
+            margin-right: 20px;
+            font-weight: 600;
         }
 
         header {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            padding: 4rem 1rem;
             text-align: center;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            padding: 5rem 1rem;
         }
 
-        .container {
-            max-width: 900px;
+        .logo-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-img:hover {
+            transform: scale(1.05);
+        }
+
+        h1 { font-size: 3.5rem; margin: 0; color: #1a2a6c; }
+        .tagline { font-size: 1.4rem; color: #555; margin-bottom: 2rem; }
+
+        .download-card {
+            background: var(--glass);
+            max-width: 600px;
             margin: 0 auto;
-            padding: 2rem;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
         }
 
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-
-        .btn {
+        .btn-download {
             display: inline-block;
-            background-color: #ffffff;
-            color: var(--primary-color);
-            padding: 1rem 2.5rem;
+            background: linear-gradient(to left, #2980b9, #6dd5fa);
+            color: white;
+            padding: 1.2rem 3rem;
             border-radius: 50px;
             text-decoration: none;
+            font-size: 1.3rem;
             font-weight: bold;
-            font-size: 1.2rem;
-            margin-top: 2rem;
-            transition: transform 0.2s, box-shadow 0.2s;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s;
         }
 
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        .btn-download:hover {
+            box-shadow: 0 10px 20px rgba(52, 152, 219, 0.4);
+            transform: translateY(-2px);
         }
 
-        .features {
+        .info-section {
+            padding: 4rem 10%;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
-            margin-top: 4rem;
         }
 
-        .feature-card {
+        .card {
             background: white;
             padding: 2rem;
             border-radius: 15px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
             text-align: center;
+            border-bottom: 4px solid var(--accent);
         }
 
-        .feature-card h3 {
-            color: var(--primary-color);
-        }
-
-        section#privacy {
-            background: #fff;
-            padding: 3rem;
-            margin-top: 4rem;
-            border-radius: 15px;
-            border-right: 5px solid var(--primary-color);
-        }
-
-        footer {
-            text-align: center;
-            padding: 2rem;
-            font-size: 0.9rem;
-            color: #64748b;
-        }
-
-        .highlight {
-            color: #e11d48;
-            font-weight: bold;
-        }
+        footer { text-align: center; padding: 3rem; color: #7f8c8d; }
     </style>
 </head>
 <body>
 
+<nav>
+    <div style="font-weight: 800; font-size: 1.5rem;">SmartBlock Pro</div>
+    <div class="nav-links">
+        <a href="index.html">בית</a>
+        <a href="privacy.html">פרטיות</a>
+    </div>
+</nav>
+
 <header>
-    <div class="hero">
-        <h1>SmartBlock Pro</h1>
-        <p>חסימת פרסומות מוחלטת באתרי חדשות ובפורום פרוג</p>
-        <a href="https://mitmachim.top/assets/uploads/files/1775037465380-%D7%AA%D7%95%D7%A1%D7%A3.zip" class="btn">הורד את התוסף עכשיו</a>
+    <img src="icon.jpg" alt="SmartBlock Pro Logo" class="logo-img">
+    <h1>SmartBlock Pro</h1>
+    <p class="tagline">התוסף העוצמתי לחסימת פרסומות באתרי חדשות ובפרוג</p>
+    
+    <div class="download-card">
+        <h3>מוכן לגלוש בשקט?</h3>
+        <p>הורידו עכשיו את הגרסה החדשה והתקינו בדפדפן.</p>
+        <a href="https://mitmachim.top/assets/uploads/files/1775037465380-%D7%AA%D7%95%D7%A1%D7%A3.zip" class="btn-download">הורדה ישירה (ZIP)</a>
     </div>
 </header>
 
-<div class="container">
-    <section class="features">
-        <div class="feature-card">
-            <h3>ניקוי מוחלט</h3>
-            <p>מסיר את כל הפרסומות המציקות ומאפשר חווית גלישה נקייה ומהירה.</p>
-        </div>
-        <div class="feature-card">
-            <h3>מותאם אישית</h3>
-            <p>אופטימיזציה מיוחדת לאתרי חדשות פופולריים ולפורום "פרוג".</p>
-        </div>
-        <div class="feature-card">
-            <h3>פרטיות מלאה</h3>
-            <p>התוסף פועל מקומית ואינו עוקב אחר היסטוריית הגלישה שלך.</p>
-        </div>
-    </section>
-
-    <section id="privacy">
-        <h2>מדיניות פרטיות (Privacy Policy)</h2>
-        <p>הפרטיות שלך חשובה לנו מאוד. להלן עיקרי המדיניות של <strong>SmartBlock Pro</strong>:</p>
-        <ul>
-            <li><strong>איסוף מידע:</strong> התוסף <span class="highlight">אינו אוסף מידע אישי</span> מכל סוג שהוא.</li>
-            <li><strong>נתונים טכניים:</strong> אנו לא אוספים כתובות IP, היסטוריית גלישה או מידע מזהה אחר.</li>
-            <li><strong>סטטיסטיקה:</strong> המידע היחיד שנאסף הוא <span class="highlight">מספר ההתקנות הכולל</span> לצורך מעקב אחר פופולריות התוסף בלבד.</li>
-            <li><strong>שימוש במידע:</strong> המידע הסטטיסטי האנונימי משמש לשיפור התוסף ותו לא.</li>
-        </ul>
-        <p>בשימוש בתוסף, אתה מסכים לתנאים אלו.</p>
-    </section>
-</div>
+<section class="info-section">
+    <div class="card">
+        <h3>חסימה חכמה</h3>
+        <p>טכנולוגיה ייחודית המזהה פרסומות מוטמעות באתרי חדשות מורכבים.</p>
+    </div>
+    <div class="card">
+        <h3>מהירות שיא</h3>
+        <p>גלישה מהירה יותר בזכות מניעת טעינת סקריפטים מיותרים של פרסום.</p>
+    </div>
+    <div class="card">
+        <h3>קהילתי וחינמי</h3>
+        <p>פותח במיוחד עבור קהילת "מתמחים טופ" ופורום "פרוג".</p>
+    </div>
+</section>
 
 <footer>
-    <p>© 2026 SmartBlock Pro | נבנה עבור קהילת מתמחים TOP</p>
+    <p>© 2026 SmartBlock Pro | כל הזכויות שמורות</p>
 </footer>
 
 </body>
